@@ -1,0 +1,88 @@
+fragment PageParts on Page {
+  __typename
+  title
+  description
+  body
+}
+
+fragment SermonParts on Sermon {
+  __typename
+  title
+  date
+  speaker
+  language
+  audioUrl
+  videoUrl
+  thumbnail
+  body
+}
+
+fragment ArticleParts on Article {
+  __typename
+  title
+  date
+  author
+  language
+  coverImage
+  excerpt
+  body
+}
+
+fragment EventParts on Event {
+  __typename
+  title
+  startDate
+  endDate
+  location
+  isRecurring
+  recurringPattern
+  image
+  body
+}
+
+fragment StaffParts on Staff {
+  __typename
+  name
+  title
+  type
+  photo
+  email
+  phone
+  body
+  order
+}
+
+fragment GalleryParts on Gallery {
+  __typename
+  title
+  date
+  coverImage
+  description
+  photos {
+    __typename
+    src
+    caption
+  }
+}
+
+fragment SettingsParts on Settings {
+  __typename
+  address
+  phone
+  email
+  donateUrl
+  announcementsUrl
+  announcementsArchiveUrl
+  virtualMeetingsUrl
+  sundaySchoolUrl
+  venueRequestUrl
+  prayerRequestUrl
+  commemorationUrl
+  priestVisitationUrl
+  askQuestionUrl
+  suggestionUrl
+  stMaryStreamUrl
+  archangelStreamUrl
+  stMaryChannelId
+  archangelPlaylistId
+}
